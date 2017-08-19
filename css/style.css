@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+	font-weight: 800;
+	margin: 0
+}
+
+h1, h2, h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+h1 {
+	font-weight: 300
+}
+
+header {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+
+	background: #a27cd2 url(../images/header-bg.jpg) center;
+	background-size: cover;
+	color: white;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	border-bottom: 1px solid white
+}
+
+.wrapper {
+	width: 1000px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 66.66%;
+	float: left;
+}
+
+.sidebar {
+	width: 33.33%;
+	float: right;
+	background: orange;
+	padding: 20px;
+}
+
+article{
+	float: left;
+	width: 50%;
+	padding-right: 20px;
+}
+
+article img{
+	width: 100%
+}
+
+footer {
+	clear: both;
+	background: gray;
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
+
+ul {
+	padding:0;
+}
+
+ul li {
+	display: inline;
+	margin: 10px;
+}
+
+
+@media (max-width: 960px) {
+	.sidebar{
+		display: none;
+	}
+
+	.container, .wrapper{
+		width: 100%
+	}
+
+@media (max-width: 660px) {
+	article{
+		width: 100%;
+		padding-right: 0}
+	}
+}
